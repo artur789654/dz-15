@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.block-1 h3 {
+  position: relative;
+}
+.block-1 h3::after {
+  content: "";
+  position: absolute;
+  top: 99%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(199, 55, 86);
+  transition: all 1s ease;
+}
+
+.block-2 h3 {
+  position: relative;
+}
+.block-2 h3::after {
+  content: "";
+  position: absolute;
+  top: 99%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(215, 145, 59);
+  transition: all 1s ease;
+}
+
+.block-3 h3 {
+  position: relative;
+}
+.block-3 h3::after {
+  content: "";
+  position: absolute;
+  top: 99%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(43, 102, 136);
+  transition: all 1s ease;
+}
+
+.block-4 h3 {
+  position: relative;
+}
+.block-4 h3::after {
+  content: "";
+  position: absolute;
+  top: 99%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(99, 187, 52);
+  transition: all 1s ease;
+}
+
+.block-1 button {
+  background-color: rgb(199, 55, 86);
+}
+
+.block-2 button {
+  background-color: rgb(215, 145, 59);
+}
+
+.block-3 button {
+  background-color: rgb(43, 102, 136);
+}
+
+.block-4 button {
+  background-color: rgb(99, 187, 52);
+}
+
+.container div {
+  width: 240px;
+  height: 360px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 5px rgba(162, 162, 162, 0.7);
+  border-radius: 10px;
+  transition: all 1s ease;
+}
+
+.container div .wraper {
+  width: 240px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  box-shadow: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.container div .wraper h3 {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.container div .wraper h2 {
+  font-size: 45px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.container div .wraper .period {
+  font-size: 18px;
+  color: rgb(223, 223, 225);
+  margin-bottom: 15px;
+}
+.container div .wraper p {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.container div .wraper button {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 10px 40px;
+}
+.container div:hover {
+  transition: all 1s ease;
+  transform: scale(1.15);
+}
+.container div:hover h3::after {
+  top: 90%;
+  height: 2.5px;
+  transform: scale(1.18);
+  transition: all 1s ease;
+}
+.container div:hover .wraper {
+  justify-content: center;
+  transform: scale(0.85);
+}/*# sourceMappingURL=style.css.map */
